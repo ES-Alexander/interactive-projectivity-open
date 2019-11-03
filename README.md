@@ -12,6 +12,12 @@ Developed as part of my honours thesis as a modular, expandable framework allowi
 - Mouse control for following detected interactions
 - Kalman compensation for improved tracking of interactions
 
+## Installation and Running
+Clone or download the repository code to your computer.
+Install `pyautogui`, `mss`, `numpy`, `opencv-python`, `overrides`, and `matplotlib` using `pip`.
+
+Navigate to where you have the repository code, and run `controller.py` from the command line (use `python3 controller.py --help` for help and options).
+
 ### Attributions
 This project builds upon and uses existing open-source projects as below:
 - a significantly modified form of the Kalman Filter code provided at https://github.com/Myzhar/simple-opencv-kalman-tracker, available under the LGPLv3
