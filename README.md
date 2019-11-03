@@ -1,7 +1,7 @@
 # interactive-projectivity-open
 A framework for detecting interactions with projections using computer vision on a camera feed.
 
-### About
+## About
 Developed as part of my honours thesis as a modular, expandable framework allowing for simple tracking and control of interactions with a projector screen. Potential uses include mirroring a laser pointer onto multiple screens during a presentation, and/or for a recording, and with sufficient algorithmic advances the possibility of remotely controlling a computer via a large interactive projection, using one or more laser pointers, fingers, or other interaction methods.
 
 ## Features
@@ -18,7 +18,7 @@ Install `pyautogui`, `mss`, `numpy`, `opencv-python`, `overrides`, and `matplotl
 
 Navigate to where you have the repository code, and run `controller.py` from the command line (use `python3 controller.py --help` for help and options).
 
-### Attributions
+## Attributions
 This project builds upon and uses existing open-source projects as below:
 - a significantly modified form of the Kalman Filter code provided at https://github.com/Myzhar/simple-opencv-kalman-tracker, available under the LGPLv3
 - `pyautogui` for mouse control, available under BSD 3-Clause "New" or "Revised" License
