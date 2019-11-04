@@ -100,7 +100,7 @@ class Screen(object):
         '''
         blur = cv2.GaussianBlur(img, (5,5), 0)
         if len(img.shape) == 3 and img.shape[2] == 4:
-            blur = cv2.cvtColor(blur, cv2.COLOR(BGRA2BGR))
+            blur = cv2.cvtColor(blur, cv2.COLOR_BGRA2BGR)
 
         if len(img.shape) < 3 or img.shape[2] == 1:
             grey = img
@@ -171,10 +171,12 @@ class Screen(object):
         # detect lines in the image
         lines = cv2.HoughLinesP(edges, 1, np.pi/180, 100, minLineLength=50,
                                 maxLineGap=50).reshape((-1,4))
+
         # scale lines to the image boundaries
         boundaries = [0,xmax,0,ymax]
         for ind, line in enumerate(lines):
             lines[ind] = Edge.scale_to_boundaries(line, boundaries)
+
         # combine lines that are too similar (assumed to be the same line)
         return Edge.reduce_lines(np.array(lines), col_thresh=col_thresh,
                                  dist_thresh=dist_thresh)
