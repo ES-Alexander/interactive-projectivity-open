@@ -14,7 +14,7 @@ Developed as part of my honours thesis as a modular, expandable framework allowi
 
 ## Installation and Running
 Clone or download the repository code to your computer.
-Install `pyautogui`, `mss`, `numpy`, `opencv-python`, `overrides`, and `matplotlib` using `pip`.
+Install `pyautogui`, `mss`, `numpy`, `opencv-python`, `overrides`, `matplotlib`, and `edgy-lines` using `pip`.
 
 Navigate to where you have the repository code, and run `controller.py` from the command line (use `python3 controller.py --help` for help and options).
 
