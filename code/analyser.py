@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import numpy as np
-from Edge2 import Edge
+from edgy_lines.Edge2 import Edge
 from os import path
 
 class Attempt(object):

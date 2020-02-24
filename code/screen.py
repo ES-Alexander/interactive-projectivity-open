@@ -2,7 +2,7 @@
 
 import cv2
 import numpy as np
-from Edge2 import Edge
+from edgy_lines.Edge2 import Edge
 import pyautogui as device # used for screen resolution
 
 class Screen(object):
